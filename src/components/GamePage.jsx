@@ -12,7 +12,7 @@ export default function GamePage() {
 
     useEffect(() => {
         // dispatch({ type: 'loading' })
-        fetch(`https://opentdb.com/api.php?amount=10&category=${catNum}&difficulty=easy&type=multiple`)
+        fetch(`https://opentdb.com/api.php?amount=10&category=${catNum}&difficulty=easy&type=multiple&encode=url3986`)
             .then(res => res.json())
             .then(data => dispatch({ type: 'dataReceived', payload: data.results }))
     }, [catNum, dispatch])
