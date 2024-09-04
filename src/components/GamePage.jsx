@@ -21,7 +21,7 @@ export default function GamePage() {
         <>
             {loadingStatus && <Loader />}
             <div className='container mx-auto text-slate-400'>
-                <div className="h-screen max-w-[400px] m-auto p-4 flex flex-col space-y-8">
+                <div className="h-screen max-w-[400px] m-auto p-4 flex flex-col space-y-8 justify-center">
                     <div className='flex items-center justify-between'>
                         {/* TIMER */}
                         {/* <div className='flex space-x-1 items-center'>
