@@ -5,8 +5,8 @@ export default function StartPage() {
     const { dispatch } = useQuiz()
     return (
         <div className="container mx-auto text-slate-400">
-            <div className="flex flex-col items-center justify-center space-y-10 h-screen max-w-[400px] m-auto ">
-                <h1 className="font-bold text-4xl text-blue-500">Quiz Pro</h1>
+            <div className="flex flex-col items-center justify-center space-y-12 max-w-[400px] m-auto ">
+
                 <h4 className="text-center text-md">Boost your brainpower with our quiz app! Explore trivia, test your skills, and discover new facts every day. It's learning and fun—all in one place!</h4>
                 <img className="w-[250px]" src="quiz.svg" alt="quiz" />
                 <button

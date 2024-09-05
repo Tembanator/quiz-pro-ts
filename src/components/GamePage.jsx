@@ -21,7 +21,7 @@ export default function GamePage() {
         <>
             {loadingStatus && <Loader />}
             <div className='container mx-auto text-slate-400'>
-                <div className="h-screen max-w-[400px] m-auto p-4 flex flex-col space-y-8 justify-center">
+                <div className="max-w-[400px] m-auto p-4 flex flex-col space-y-8 justify-center">
                     <div className='flex items-center justify-between'>
                         {/* TIMER */}
                         {/* <div className='flex space-x-1 items-center'>
@@ -43,15 +43,15 @@ export default function GamePage() {
                         <>
                             <button
                                 onClick={() => dispatch({ type: 'exitedQuiz' })}
-                                className="border-[1px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-red-700 font-normal duration-300">Quit quiz</button>
+                                className="border-[1px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-red-700 font-normal duration-300 rounded-xl">Quit quiz</button>
                             {(answer !== null & currentQuestion < (questions.length - 1)) ?
                                 <button
                                     onClick={() => dispatch({ type: 'nextQuestion' })}
-                                    className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-green-700 font-normal duration-300">Next</button> : ''
+                                    className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-green-700 font-normal duration-300 rounded-xl">Next</button> : ''
                             }
                             {answer !== null & currentQuestion === (questions.length - 1) ? <button
                                 onClick={() => dispatch({ type: 'finish' })}
-                                className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-green-700 font-normal duration-300">Finish</button> : ''}
+                                className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-green-700 font-normal duration-300 rounded-xl">Finish</button> : ''}
                         </>
                     </div>
                 </div>
