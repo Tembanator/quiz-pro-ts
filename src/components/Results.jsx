@@ -6,7 +6,7 @@ export default function Results() {
     const { dispatch, score, questions } = useQuiz()
     return (
         <div className='container mx-auto text-slate-400'>
-            <div className="h-screen max-w-[400px] m-auto p-4 flex flex-col space-y-8 items-center">
+            <div className="h-screen max-w-[600px] m-auto p-4 flex flex-col space-y-8 items-center">
                 <h2 className='text-3xl font-bold text-blue-500'>Results</h2>
                 <div>
 
@@ -20,7 +20,7 @@ export default function Results() {
                 </div>
                 <button
                     onClick={() => dispatch({ type: 'exitedQuiz' })}
-                    className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-blue-700 font-normal duration-300 flex items-center justify-center space-x-2 w-fit font-semibold"><span className='pt-1'><HiOutlineRefresh size={14} /></span><span>Try again</span></button>
+                    className="border-[2px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-blue-700 duration-300 flex items-center justify-center space-x-2 w-fit font-semibold"><span className='pt-1'><HiOutlineRefresh size={14} /></span><span>Try again</span></button>
             </div>
         </div>
     )

@@ -13,6 +13,7 @@ function App() {
       {status === 'almostActive' && <Categories />}
       {status === 'active' && <GamePage />}
       {status === 'finish' && <Results />}
+      <div className="fixed bottom-0 w-full text-center p-2 text-xs text-slate-400 bg-sky-800"><span>Developed by TS Dlamini</span></div>
     </>
 
   )

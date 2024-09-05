@@ -43,7 +43,7 @@ export default function GamePage() {
                         <>
                             <button
                                 onClick={() => dispatch({ type: 'exitedQuiz' })}
-                                className="border-[1px] border-red-300 px-3 pb-1 border-opacity-25 hover:bg-red-700 font-normal duration-300">Quit quiz</button>
+                                className="border-[1px] border-slate-300 px-3 pb-1 border-opacity-25 hover:bg-red-700 font-normal duration-300">Quit quiz</button>
                             {(answer !== null & currentQuestion < (questions.length - 1)) ?
                                 <button
                                     onClick={() => dispatch({ type: 'nextQuestion' })}
